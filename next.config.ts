@@ -1,18 +1,7 @@
-const nextConfig = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.(glb|gltf)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            outputPath: 'static/models/',
-          },
-        },
-      ],
-    });
-    return config;
-  },
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
 };
 
-module.exports = nextConfig;
+export default nextConfig;

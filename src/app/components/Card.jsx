@@ -1,42 +1,45 @@
-
+// components/Card.js
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const Card = ({ imageSrc, name, description, whatsappMessage }) => {
   return (
-    <motion.div
-      className="relative flex flex-col justify-between p-6 w-96 sm:w-72 h-80 md:w-96 bg-cover lg:w-[400px] bg-center rounded-lg shadow-lg text-white"
-      style={{ backgroundImage: `url(${imageSrc})` }}
-      whileHover={{
-        y: -10,
-        scale: 1.05,
-        boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
-      }}
-      transition={{ duration: 0.3 }}
-    >
-      {/* Overlay */}
-      <div  style={{ borderBottomWidth: '0.10px' }} className="absolute inset-0 p-2 bottom-0 border-2 border-brandWhite shadow-brandGreen shadow-lg bg-black opacity-30 rounded-lg">
-       
-      </div>
-      
-      {/* Content */}
-      <div className="relative z-10 flex flex-col justify-between h-full">
+    <div className="bg-white border border-brandWhite rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+      {/* Imagem de Capa */}
+      <img
+        src={imageSrc}
+        alt={name}
+        className="w-full h-48 object-cover"
+      />
+
+      {/* Conteúdo do Card */}
+      <div className="p-6 bg-[url('/bg.png')] bg-brandBlack text-brandWhite flex flex-col justify-between h-64 sm:h-72 lg:h-80">
+        {/* Título e Descrição */}
         <div>
-          <h3 className="text-xl font-bold mb-2 mx-2 ">{name}</h3>
-          <p className="text-sm  mb-4 mx-2">{description}</p>
+          <h2 className="text-2xl sm:text-xl md:text-2xl font-bold mb-2">{name}</h2>
+          <p className="text-sm mr-4 sm:text-base md:text-lg mb-6">{description}</p>
         </div>
 
-        {/* Button fixed at bottom-left */}
-        <a
-          href={`https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute bottom-1 left-1 px-4 py-2 bg-brandGray text-white rounded hover:bg-brandGreen transition-colors"
-        >
-          Saiba mais
-        </a>
+        {/* Rodapé com Imagem de Verificação e Botão */}
+        <div className="flex items-center justify-between mt-4 mx-4">
+          {/* Imagem de Verificação no canto inferior esquerdo */}
+          <img
+            src="./tag.png"
+            alt="Verificado"
+            className="w-16 py-2 h-auto sm:w-20" // Tamanho ajustado para mobile
+          />
+
+          {/* Botão no canto inferior direito */}
+          <a
+            href={`https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-brandGray text-white rounded hover:bg-brandGreen transition-colors text-sm md:text-base"
+          >
+            Saiba mais
+          </a>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

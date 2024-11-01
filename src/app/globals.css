@@ -44,6 +44,9 @@ body {
   animation: bounce 8s infinite;
 }
 
+@import "react-vertical-timeline-component/style.min.css";
+
+
 @keyframes space-drift {
   0% {
     transform: translate(0, 0);

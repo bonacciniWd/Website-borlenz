@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'metal-gradient': 'linear-gradient(90deg, var(--bgbrandWhite), #d4d4d4 15%, #a0a0a0 30%, #6c6c6c 45%, var(--bgbrandBlack) 60%, #6c6c6c 75%, #a0a0a0 90%, var(--bgbrandWhite))',
+      },
       colors: {
         brandBlack: "#000000",
         brandBlue: "#514192",
@@ -19,7 +22,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Sitka", "sans-serif"],
-        heading: ["Brother-1816-ExtraBold", "sans-serif"], // Usando a fonte aqui
+        heading: ["Brother-1816-ExtraBold", "sans-serif"],
       },
     },
   },

@@ -8,8 +8,10 @@ export default function ServicesSection() {
       className="flex flex-col items-center justify-center py-20 bg-[url('/bg-2.png')] bg-fixed bg-center bg-brandGray text-brandWhite"
       id="services"
     >
-      <h2 className="md:text-5xl text-4xl lg:text-5xl font-heading mb-20 mt-10 text-center">Nossos Serviços</h2>
-      <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 max-w-screen mx-auto mb-20">
+      <h2 className="md:text-5xl text-4xl font-heading mb-20 mt-10 text-center">
+        Nossos Serviços
+      </h2>
+      <div className="grid gap-6 p-4 sm:px-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen max-h-auto mx-auto">
         <Card
           imageSrc="/cards/card-1.jpg"
           name="Identidade Visual"
@@ -30,17 +32,17 @@ export default function ServicesSection() {
         />
         <Card
           imageSrc="/cards/card-4.jpg"
-          name="Captação de fotos e vídeos "
-          description="Nosso sistema de CRM (Customer Relationship Management) oferece uma solução completa para gerenciar informações sobre clientes, armazenando dados essenciais como nome, endereço, histórico de compras e preferências... "
+          name="Captação de fotos e vídeos"
+          description="Nosso sistema de CRM (Customer Relationship Management) oferece uma solução completa para gerenciar informações sobre clientes."
           whatsappMessage="Estou interessado em Filmagens Promocionais. Pode me dar mais informações?"
         />
-         <Card
+        <Card
           imageSrc="/cards/card-6.jpg"
           name="Posicionamento estratégico digital"
           description="Crie conteúdo visual impactante para sua marca com nossas filmagens promocionais. Os drones proporcionam uma visão única que pode destacar seu produto ou serviço."
           whatsappMessage="Estou interessado em Filmagens Promocionais. Pode me dar mais informações?"
         />
-         <Card
+        <Card
           imageSrc="/cards/card-5.jpg"
           name="Site Institucional"
           description="Crie conteúdo visual impactante para sua marca com nossas filmagens promocionais. Os drones proporcionam uma visão única que pode destacar seu produto ou serviço."
