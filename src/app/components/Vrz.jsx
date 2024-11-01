@@ -33,11 +33,8 @@ function Vrz() {
         </div>
         
         <div className="mt-6 md:mt-12 flex justify-center md:justify-end">
-          <img
-            src="/back-hero.png"
-            alt="hero"
-            className="animate-bounce mt-10 md:mt-0 w-80 sm:w-64 md:w-80 lg:w-[700px]"
-          />
+          <img src="/back-hero.png" alt="hero" className="animate-bounce mt-10 md:mt-0 w-80 sm:w-64 md:w-80 lg:w-[700px]"  />
+          <Image src="/back-hero.png" alt="hero" width={320} height={210} className="animate-bounce mt-10 md:mt-0 w-80 sm:w-64 md:w-80 lg:w-[700px]"  />
         </div>
       </div>
 
