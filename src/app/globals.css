@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolio-container {
+  position: flex;
+  overflow: hidden;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(20%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+  50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+.animate-bounce {
+  animation: bounce 8s infinite;
+}
+
+@keyframes space-drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, -25px); /* Deslocamento maior à direita e para cima */
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translate(-50px, 60px); /* Deslocamento maior à esquerda e para cima */
+    animation-timing-function: ease-in-out;
+  }
+  75% {
+    transform: translate(25px, -40px); /* Deslocamento maior à direita e para cima */
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-space-drift {
+  animation: space-drift 22s infinite;
+}
+
+
