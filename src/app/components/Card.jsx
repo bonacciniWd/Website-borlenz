@@ -3,7 +3,7 @@ import React from 'react';
 
 const Card = ({ imageSrc, name, description, whatsappMessage }) => {
   return (
-    <div className="bg-white border border-brandWhite rounded-lg shadow-lg overflow-hidden transform transition-transform hover:scale-105">
+    <div className="bg-white border border-brandWhite rounded-lg shadow-lg overflow-hidden">
       {/* Imagem de Capa */}
       <img
         src={imageSrc}
@@ -15,7 +15,7 @@ const Card = ({ imageSrc, name, description, whatsappMessage }) => {
       <div className="p-6 bg-[url('/bg.png')] bg-brandBlack text-brandWhite flex flex-col justify-between h-64 sm:h-72 lg:h-80">
         {/* Título e Descrição */}
         <div>
-          <h2 className="text-2xl sm:text-xl md:text-2xl font-bold mb-2">{name}</h2>
+          <h2 className="text-xl sm:text-xl md:text-2xl font-bold mb-2">{name}</h2>
           <p className="text-sm mr-4 sm:text-base md:text-lg mb-6">{description}</p>
         </div>
 

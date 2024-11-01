@@ -20,7 +20,9 @@ function Vrz() {
     <div className="relative lg:h-[1400px] h-screen w-screen overflow-hidden bg-[url('/bg.png')] bg-cover bg-center flex flex-col items-center justify-start pt-8 md:pt-16">
       
       {/* Imagem de Fundo Fixa no Lado Direito Inferior */}
-      <div className="absolute animate-space-drift bottom-0 right-0 lg:h-[600px] lg:w-[600px] md:h-[400px] md:w-[400px] h-[300px] w-[300px] bg-[url('/lua.png')] bg-contain bg-no-repeat opacity-80 pointer-events-none" />
+      <div className="absolute absolute animate-space-drift bottom-0 right-0 lg:h-[600px] lg:w-[600px] md:h-[400px] md:w-[400px] h-[300px] w-[300px] bg-contain bg-no-repeat opacity-80 pointer-events-none">
+      <Image alt="lua" src="/lua.png" width={340} height={160} className="" />
+      </div>
 
       {/* Container de texto e imagem */}
       <div className="relative z-10 flex flex-col md:grid md:grid-cols-2 items-center md:gap-4 text-center md:text-left text-brandWhite mt-8 md:mt-12 max-w-screen md:ml-20 mx-6 lg:ml-28">
@@ -33,7 +35,6 @@ function Vrz() {
         </div>
         
         <div className="mt-6 md:mt-12 flex justify-center md:justify-end">
-          <img src="/back-hero.png" alt="hero" className="animate-bounce mt-10 md:mt-0 w-80 sm:w-64 md:w-80 lg:w-[700px]"  />
           <Image src="/back-hero.png" alt="hero" width={320} height={210} className="animate-bounce mt-10 md:mt-0 w-80 sm:w-64 md:w-80 lg:w-[700px]"  />
         </div>
       </div>

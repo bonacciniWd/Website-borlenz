@@ -38,7 +38,7 @@ export default function ServicesSection() {
         />
         <Card
           imageSrc="/cards/card-6.jpg"
-          name="Posicionamento estratégico digital"
+          name="Posicionamento digital"
           description="Crie conteúdo visual impactante para sua marca com nossas filmagens promocionais. Os drones proporcionam uma visão única que pode destacar seu produto ou serviço."
           whatsappMessage="Estou interessado em Filmagens Promocionais. Pode me dar mais informações?"
         />
