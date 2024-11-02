@@ -8,7 +8,7 @@ const HeroSection = () => {
       style={{ borderBottomWidth: '1px' }}
       className="h-screen flex flex-col justify-center items-center bg-[url('/bg.png')] bg-cover bg-center border-brandWhite/60 bg-brandBlack text-center text-brandWhite pt-16 sm:pt-0 space-y-4 sm:space-y-8"
     >
-      <h2 className="text-3xl mb-4 font-bold uppercase mx-4 sm:text-5xl font-heading">
+      <h2 className="text-3xl mb-4 font-black uppercase mx-4 sm:text-5xl font-heading">
         Transformamos ideias em impacto visual
       </h2>
       <p className="text-base mx-2 sm:text-2xl font-sans">
