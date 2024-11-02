@@ -8,7 +8,7 @@ export default function ServicesSection() {
       className="flex flex-col items-center justify-center py-20 bg-[url('/bg-2.png')] bg-fixed bg-center bg-brandGray text-brandWhite"
       id="services"
     >
-      <h2 className="md:text-5xl text-4xl font-heading mb-20 mt-10 text-center">
+      <h2 className="md:text-5xl text-4xl font-heading mb-20 mt-10 text-center font-black text-brandWhite">
         Nossos Serviços
       </h2>
       <div className="grid gap-6 p-4 sm:px-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-screen max-h-auto mx-auto">

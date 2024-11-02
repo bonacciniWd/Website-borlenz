@@ -17,11 +17,11 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <AboutSection />
+        <TestTimeLine />
         <Gallery />
-       <TestTimeLine />
-        <RouteMapSection />
         <PortfolioSection />
         <Vrz />
+        <RouteMapSection />
         <Footer />
       </main>
     </div>
