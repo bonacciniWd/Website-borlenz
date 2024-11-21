@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const HeroSection = () => {
