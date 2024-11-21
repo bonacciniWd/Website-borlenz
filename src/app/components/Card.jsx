@@ -3,20 +3,20 @@ import React from 'react';
 
 const Card = ({ imageSrc, name, description, whatsappMessage }) => {
   return (
-    <div className="bg-white border border-brandWhite rounded-lg shadow-lg overflow-hidden">
+    <div className="bg-brandBlack border h-auto border-brandWhite rounded-lg shadow-lg overflow-hidden">
       {/* Imagem de Capa */}
       <img
         src={imageSrc}
         alt={name}
-        className="w-full h-48 object-cover"
+        className="w-full h-auto object-cover"
       />
 
       {/* Conteúdo do Card */}
-      <div className="p-6 bg-[url('/bg.png')] bg-brandBlack text-brandWhite flex flex-col justify-between h-64 sm:h-72 lg:h-80">
+      <div className="p-6 bg-[url('/bg.png')] bg-no-repeat h-auto bg-brandBlack text-brandWhite flex flex-col justify-between md:h-auto sm:h-auto lg:xl:auto sm:md:lg:xl:mx-6">
         {/* Título e Descrição */}
         <div>
           <h2 className="text-xl sm:text-xl md:text-2xl font-bold mb-2">{name}</h2>
-          <p className="text-sm mr-4 sm:text-base md:text-lg mb-6">{description}</p>
+          <p className="text-sm mr-4 sm:text-base md:text-lg mb-6 ">{description}</p>
         </div>
 
         {/* Rodapé com Imagem de Verificação e Botão */}

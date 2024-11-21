@@ -4,12 +4,13 @@ import { useState, useEffect } from "react";
 
 function Vrz() {
   const [frameIndex, setFrameIndex] = useState(0);
-  const totalFrames = 150;
+  const totalFrames = 210; // Total de frames na animação
+  const frameRate = 30; // Intervalo entre frames (em ms)
 
   useEffect(() => {
     const interval = setInterval(() => {
       setFrameIndex((prevIndex) => (prevIndex + 1) % totalFrames);
-    }, 40);
+    }, frameRate);
 
     return () => clearInterval(interval);
   }, []);
@@ -30,10 +31,10 @@ function Vrz() {
         <Image
           src={framePath}
           alt="Animação da logo"
-          width={360}
-          height={200}
+          width={220}
+          height={140}
           priority
-          className="w-[260px] sm:w-[300px] mb-2 md:w-[360px] lg:w-[400px] md:ml lg:ml-44" // Ajustando a largura para diferentes breakpoints
+          className="w-[200px] sm:w-[300px] mb-2 md:w-[360px] lg:w-[400px] md:ml lg:ml-44" // Ajustando a largura para diferentes breakpoints
         />
           
         </div>
