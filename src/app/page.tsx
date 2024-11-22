@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Vrz from "./components/Vrz";
 import TestTimeLine from "./components/TestTimeLine"; 
 import PortfolioSection from "./components/PortfolioSection";
-import Gallery from "./components/Gallery";
+
 
 export default function Home() {
   return (
@@ -18,10 +18,9 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <TestTimeLine />
-        <Gallery />
+        <RouteMapSection />
         <PortfolioSection />
         <Vrz />
-        <RouteMapSection />
         <Footer />
       </main>
     </div>

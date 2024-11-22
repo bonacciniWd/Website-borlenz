@@ -34,7 +34,7 @@ const TestTimeLine = () => {
   
 
   return (
-    <div className="h-auto flex flex-col justify-center items-center bg-[url('/bg-2.png')] bg-fixed bg-center bg-brandGray shadow-2xl border-brandWhite shadow-brandWhite/80 text-center text-brandWhite">
+    <div className="h-auto flex flex-col justify-center items-center bg-[url('/bg-2.png')] bg-no-repeat bg-fixed shadow-2xl  text-center text-brandWhite">
       <h1 className="py-8 mt-20 font-black text-2xl md:text-4xl lg:text-4xl">
       Roteiro de Operação - <span className="text-brandGreen">BORLENZ®</span>
       </h1>
@@ -59,7 +59,7 @@ const TestTimeLine = () => {
                 <img
                   src={step.icon}
                   alt="Icone"
-                  className='w-[90%] h-[90%] object-contain rounded-full animate-pulse'
+                  className='w-[90%] h-[90%] object-contain rounded-full'
                 />
               </div>
             }

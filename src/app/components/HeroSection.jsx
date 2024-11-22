@@ -9,13 +9,13 @@ const HeroSection = () => {
       style={{ borderBottomWidth: '1px' }}
       className="relative h-screen flex flex-col justify-center items-center bg-[url('/bg.png')] bg-cover bg-center border-brandWhite/60 bg-brandBlack text-center text-brandWhite pt-16 sm:pt-0 space-y-4 sm:space-y-8"
     >
-      <h2 className="text-3xl jus mb-4 font-black uppercase mx-4 sm:text-5xl font-heading">
+      <h2 className="text-3xl jus mb-6 font-black uppercase mx-4 sm:text-5xl font-heading">
         <TextGenerateEffect
           words="Transformamos ideias em impacto visual"
-          className="text-center text-[38px] font-black sm:text-5xl lg:text-5xl "
+          className="text-center text-[38px] font-black sm:text-5xl lg:text-5xl text-3xl"
         />
       </h2>
-      <p className="text-lg p-20 sm:text-2xl font-sans">
+      <p className="text-lg p-5 sm:text-2xl font-sans">
         Criação de Identidade Visual, Planejamento e Desenvolvimento de Negócios
       </p>
 
