@@ -30,7 +30,7 @@ export default function Header() {
         {/* Menu Desktop */}
         <nav className="hidden font-bold md:flex gap-8 lg:mr-14 md:mr-10 lg:text-xl">
           <a href="#home" className="hover:text-brandGreen transition-colors">Início</a>
-          <a href="#servicos" className="hover:text-brandOrange transition-colors">Serviços</a>
+          <a href="#serviços" className="hover:text-brandOrange transition-colors">Serviços</a>
           <a href="#sobre" className="hover:text-brandGreen transition-colors">Sobre</a>
           <a href="#portfolio" className="hover:text-brandOrange transition-colors">Portfólio</a>
           <a href="#contato" className="hover:text-brandGreen transition-colors">Contato</a>
@@ -44,10 +44,10 @@ export default function Header() {
 
      {/* Menu Mobile */}
     {isMenuOpen && (
-      <div className="fixed rounded-lg font-extrabold uppercase top-20 right-10 w-24 max-w-xs py-2 transition-transform transform md:hidden bg-brandBlack/60 backdrop-blur-md">
+      <div className="fixed rounded-lg p-8 font-extrabold top-20 right-10 w-24 max-w-xs py-2 transition-transform transform md:hidden bg-brandBlack/60 backdrop-blur-md">
         <div className="flex flex-col items-center justify-center gap-6 text-sm p-4">
           <a href="#home" className="hover:text-brandGreen transition-colors" onClick={toggleMenu}>Início</a>
-          <a href="#servicos" className="hover:text-brandOrange transition-colors" onClick={toggleMenu}>Serviços</a>
+          <a href="#serviços" className="hover:text-brandOrange transition-colors" onClick={toggleMenu}>Serviços</a>
           <a href="#sobre" className="hover:text-brandGreen transition-colors" onClick={toggleMenu}>Sobre</a>
           <a href="#portfolio" className="hover:text-brandOrange transition-colors" onClick={toggleMenu}>Portfólio</a>
           <a href="#contato" className="hover:text-brandGreen transition-colors" onClick={toggleMenu}>Contato</a>

@@ -8,29 +8,38 @@ const TestTimeLine = () => {
   const steps = [
     {
       title: "Briefing",
-      description: "No início de cada projeto, realizamos um profundo entendimento do cliente e das suas necessidades. Esta etapa é crucial para alinhar expectativas e garantir que todas as nuances do projeto sejam consideradas. Utilizamos entrevistas e questionários para captar informações relevantes, permitindo que a equipe tenha uma visão clara dos objetivos e desafios do cliente.",
+      description: ` • Realização de entrevistas e questionários.<br /><br />
+                     • Identificação das expectativas e desafios do cliente.<br /><br />
+                     • Compreensão profunda para alinhar visão e objetivos do projeto.`,
       iconStyle: { background: "#161f24" },
       icon: '/numeros/1.png',
     },
     {
       title: "Conceito",
-      description: "Após o levantamento de necessidades, passamos para a definição do conceito criativo e visual. Aqui, nossa equipe se dedica a transformar as informações coletadas em um conceito coerente que reflita a identidade e os valores do cliente. Essa fase envolve brainstorming, pesquisa de referências e criação de moodboards que guiarão o desenvolvimento visual.",
+      description: `• Transformação das informações coletadas em um conceito visual coerente. <br /><br />
+                    •  Desenvolvimento por meio de brainstorming, pesquisa de referências e criação de moodboards. <br /><br />
+                    •  Reflexão da identidade e valores do cliente no conceito criado.`,
       iconStyle: { background: "#161f24" },
       icon: '/numeros/2.png',
     },
     {
       title: "Produção",
-      description: "Com o conceito aprovado, iniciamos o desenvolvimento dos elementos gráficos e da identidade visual. Nessa etapa, trabalhamos na criação de logotipos, paletas de cores, tipografias e outros elementos visuais que comporão a identidade do projeto. Nossa equipe de designers se dedica a garantir que cada elemento seja estéticamente agradável e funcione em harmonia com o conceito definido.",
+      description: `• Criação de logotipos, paletas de cores e tipografias. <br /><br />
+                   • Design de elementos que integram a identidade visual do projeto. <br /><br />
+                   • Garantia de harmonia estética e funcionalidade visual.`,
       iconStyle: { background: "#161f24" },
       icon: '/numeros/3.png',
     },
     {
       title: "Entrega",
-      description: "Finalmente, chegamos à fase de apresentação e entrega do projeto final. Realizamos uma apresentação detalhada, onde mostramos todos os elementos criados e como eles se interconectam para formar a identidade visual completa. Após a aprovação final, entregamos os arquivos em diversos formatos, assegurando que o cliente tenha tudo o que precisa para implementar a nova identidade visual em suas plataformas.",
+      description: ` • Apresentação detalhada dos elementos criados e sua interconexão.<br /><br />
+                    • Entrega de arquivos em diversos formatos.<br /><br />
+                   • Suporte para a implementação da nova identidade visual em plataformas do cliente.`,
       iconStyle: { background: "#161f24" },
       icon: '/numeros/4.png',
     }
   ];
+  
   
 
   return (
@@ -65,10 +74,11 @@ const TestTimeLine = () => {
             }
           >
             <h3 className="text-xl md:text-2xl lg:text-4xl font-black">{step.title}</h3>
-            <p className="text-lg md:text-xl lg:text-2xl my-4 mx-2 pt-6 pb-10">
-              {step.description}
-            </p>
-            {/* Componente <Image> movido para o final do card */}
+            <p
+              className="text-2xl md:text-xl py-3 text-left"
+              dangerouslySetInnerHTML={{ __html: step.description }}
+            ></p>
+
             <div className="mt-4">
               <Image src="/tag.png" alt="borlenz" width={60} height={60} />
             </div>

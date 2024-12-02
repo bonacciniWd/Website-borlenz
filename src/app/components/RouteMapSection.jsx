@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+
 import MagicButton from "./MagicButton";
 
 export default function PortfolioSection() {
@@ -50,7 +51,7 @@ export default function PortfolioSection() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group relative overflow-hidden p-6 bg-[url('/bg-2.png')] bg-center bg-brandSprite/ text-brandWhite shadow-2xl border-[1px] border-brandBlue shadow-brandBlue/60 rounded-lg transition-transform duration-300 transform hover:scale-105"
+            className="group relative  overflow-hidden p-6 bg-[url('/bg-2.png')] bg-center bg-brandSprite/ text-brandWhite shadow-2xl border-[1px] border-brandBlue shadow-brandBlue/60 rounded-lg transition-transform duration-300 transform hover:scale-105"
           >
             {/* Imagem do Card */}
             <Image
@@ -65,7 +66,6 @@ export default function PortfolioSection() {
               {project.title}
             </h3>
             <p className="text-base mb-8">{project.description}</p>
-            {/* Botão Personalizado */}
             <MagicButton title={project.buttonTitle} link={project.link} />
           </div>
         ))}

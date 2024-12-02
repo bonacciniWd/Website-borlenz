@@ -3,7 +3,9 @@ import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
 import AboutSection from "./components/AboutSection";
 import RouteMapSection from "./components/RouteMapSection";
-import Footer from "./components/Footer";
+import BlogPage from "./components/BlogPage";
+import Footer from "./components/Footer"
+import EmbedModel from "./components/EmbedModel";
 import Vrz from "./components/Vrz";
 import TestTimeLine from "./components/TestTimeLine"; 
 import PortfolioSection from "./components/PortfolioSection";
@@ -11,16 +13,18 @@ import PortfolioSection from "./components/PortfolioSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
       <main>
         <HeroSection />
-        <ServicesSection />
         <AboutSection />
+        <PortfolioSection />
+        <ServicesSection />
         <TestTimeLine />
         <RouteMapSection />
-        <PortfolioSection />
+        <BlogPage />
         <Vrz />
+        <EmbedModel />
         <Footer />
       </main>
     </div>

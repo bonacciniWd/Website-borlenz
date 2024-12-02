@@ -1,9 +1,18 @@
-// components/Card.js
 import React from 'react';
+import { motion } from "framer-motion";
+import { TbMessage2Question } from "react-icons/tb";
 
 const Card = ({ imageSrc, name, description, whatsappMessage }) => {
+  const whatsappNumber = "5547992502202"; // Substitua pelo número de WhatsApp da empresa no formato internacional
+
+  const handleWhatsappClick = () => {
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
-    <div className="bg-brandBlack border h-auto border-brandWhite rounded-lg shadow-lg overflow-hidden">
+    <div className="bg-brandBlack border h-auto border-brandBlue rounded-lg shadow-lg overflow-hidden">
       {/* Imagem de Capa */}
       <img
         src={imageSrc}
@@ -12,11 +21,11 @@ const Card = ({ imageSrc, name, description, whatsappMessage }) => {
       />
 
       {/* Conteúdo do Card */}
-      <div className="p-6 bg-[url('/bg.png')] bg-no-repeat h-auto bg-brandBlack text-brandWhite flex flex-col justify-between md:h-auto sm:h-auto lg:xl:auto sm:md:lg:xl:mx-6">
+      <div className="p-6 bg-[url('/bg.png')] bg-no-repeat h-auto bg-brandBlack text-brandWhite flex flex-col justify-between">
         {/* Título e Descrição */}
         <div>
           <h2 className="text-xl sm:text-xl md:text-2xl font-bold mb-2">{name}</h2>
-          <p className="text-sm mr-4 sm:text-base md:text-lg mb-6 ">{description}</p>
+          <p className="text-sm mr-4 sm:text-base md:text-lg mb-6">{description}</p>
         </div>
 
         {/* Rodapé com Imagem de Verificação e Botão */}
@@ -25,18 +34,24 @@ const Card = ({ imageSrc, name, description, whatsappMessage }) => {
           <img
             src="./tag.png"
             alt="Verificado"
-            className="w-16 py-2 h-auto sm:w-20" // Tamanho ajustado para mobile
+            className="w-16 py-2 h-auto sm:w-20"
           />
 
-          {/* Botão no canto inferior direito */}
-          <a
-            href={`https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 bg-brandGray text-white rounded hover:bg-brandGreen transition-colors text-sm md:text-base"
+          {/* Botão para Abrir WhatsApp */}
+          <motion.div
+            className="flex items-center justify-center w-40 h-16 cursor-pointer relative overflow-hidden rounded-lg"
           >
-            Saiba mais
-          </a>
+            <button
+              onClick={handleWhatsappClick}
+              className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none"
+            >
+              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+              <span className="inline-flex text-sm text-brandWhite h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-7 font-medium hover:to-brandOrange backdrop-blur-3xl transition-transform transform active:scale-95">
+                <TbMessage2Question className="mr-2 text-brandWhite hover:to-brandOrange" />
+                Saiba Mais
+              </span>
+            </button>
+          </motion.div>
         </div>
       </div>
     </div>
