@@ -38,14 +38,8 @@ export default function AboutSection() {
     },
     {
       title: "Nossa Missão",
-      description:
-        "Na Borlenz, comunicar é muito mais do que uma mensagem: é um ato de propósito. Buscamos inspirar, conectar e transformar através de uma comunicação acessível e verdadeira. Cada peça criada, cada palavra escolhida e cada detalhe visual são cuidadosamente planejados para transmitir valores, contando histórias com significado. Sejam artes para mídias sociais, projetos audiovisuais, identidade visual ou assessoria de marketing, nossa missão é clara – elevar a percepção e o impacto de cada marca com quem trabalhamos.",
-      imageSrc: "/cards/card-8.jpg",
-    },
-    {
-      title: "Nossa Missão",
       description: "Na Borlenz, comunicar é muito mais do que uma mensagem: é um ato de propósito. Buscamos inspirar, conectar e transformar através de uma comunicação acessível e verdadeira. Cada peça criada, cada palavra escolhida e cada detalhe visual são cuidadosamente planejados para transmitir valores, contando histórias com significado. Sejam artes para mídias sociais, projetos audiovisuais, identidade visual ou assessoria de marketing, nossa missão é clara – elevar a percepção e o impacto de cada marca com quem trabalhamos.",
-      imageSrc: "/cards/card-8.jpg",
+      imageSrc: "/cards/card-7.jpg",
     },
     {
       title: "Nossos Valores",

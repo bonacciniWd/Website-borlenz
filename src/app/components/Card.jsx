@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { TbMessage2Question } from "react-icons/tb";
+import { TbBrandWhatsapp } from "react-icons/tb";
 
 const Card = ({ imageSrc, name, description, whatsappMessage }) => {
   const whatsappNumber = "5547992502202"; // Substitua pelo número de WhatsApp da empresa no formato internacional
@@ -47,8 +47,8 @@ const Card = ({ imageSrc, name, description, whatsappMessage }) => {
             >
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
               <span className="inline-flex text-sm text-brandWhite h-full w-full cursor-pointer items-center justify-center rounded-lg bg-slate-950 px-7 font-medium hover:to-brandOrange backdrop-blur-3xl transition-transform transform active:scale-95">
-                <TbMessage2Question className="mr-2 text-brandWhite hover:to-brandOrange" />
-                Saiba Mais
+                <TbBrandWhatsapp className="mr-2 text-brandWhite hover:to-brandOrange" />
+                Contate-nos
               </span>
             </button>
           </motion.div>
