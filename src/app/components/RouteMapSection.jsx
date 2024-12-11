@@ -17,7 +17,7 @@ export default function PortfolioSection() {
       title: "Laboratório de IA",
       description:
         "Um laboratório de Inteligência Generativa em Blumenau, onde desenvolvemos o material impresso deles.",
-      imageSrc: "/cards/card-2.jpg",
+      imageSrc: "/cards/card-22.jpg",
       buttonTitle: "Ver Portfolio",
       link: "https://www.behance.net/gallery/205715647/Adesivacao-de-laboratorio-Ambientacao",
     },
@@ -25,7 +25,7 @@ export default function PortfolioSection() {
       title: "Infinity",
       description:
         "Criativos para a campanha digital da empresa infinity .web3. Material desenvolvido para um sistema de gestão de barbeiros.",
-      imageSrc: "/cards/card-3.jpg",
+      imageSrc: "/cards/card-33.jpg",
       buttonTitle: "Ver Portfolio",
       link: "https://www.behance.net/gallery/194062973/Criativos-para-midias-sociais-InfinityWeb3",
     },
