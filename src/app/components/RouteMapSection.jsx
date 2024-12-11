@@ -9,7 +9,7 @@ export default function PortfolioSection() {
       title: "Reverse Barbershop",
       description:
         "Uma barbearia de Blumenau que agora ingressou na internet com uma presença digital marcante.",
-      imageSrc: "/cards/card-1.jpg",
+      imageSrc: "/cards/card-0.jpg",
       buttonTitle: "Ver Portfolio",
       link: "https://www.behance.net/gallery/211354693/Identidade-Visual-Reverse-BarberShop",
     },
